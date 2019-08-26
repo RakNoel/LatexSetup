@@ -1,12 +1,5 @@
 #!/usr/bin/env python3
 
-import os
-
-# Setup location
-os.remove('.gitignore')
-os.remove('.git/')
-os.remove('README.md')
-
 # Read Innput
 cCode = input("Enter course code (e.g. INF234): ")
 cName = input("Enter cource name (e.g. Advanced alg.): ")
@@ -25,6 +18,3 @@ innFile.close()
 outFile = open(fileName, "w+")
 outFile.write(fix)
 outFile.close()
-
-# Finaly remove self
-os.remove('setup.py')
