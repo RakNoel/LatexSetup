@@ -1,0 +1,73 @@
+%	INF219
+%	Oskar L. F. Lerivåg
+%	3D Printer Tizen wearable application
+
+\documentclass[a4paper, 12pt]{article}
+
+%Bookmarks
+\usepackage[colorlinks=true,urlcolor=cyan,linkcolor=black,citecolor=red,bookmarksopen=true]{hyperref}
+\usepackage{bookmark}
+
+\usepackage[utf8]{inputenc}
+\usepackage{amsmath}
+\usepackage{pgf,tikz}
+\usepackage{mathrsfs}
+\usepackage{listings}
+\usetikzlibrary{arrows}
+\usepackage{amssymb}
+\usepackage{url}
+\usepackage{epigraph}
+
+%Images%
+\usepackage{graphicx}
+\usepackage{float}
+
+%Margins
+\usepackage{geometry}
+\geometry{a4paper, margin=3cm}
+
+%Citations
+\usepackage[round]{natbib}
+\bibliographystyle{plainnat}
+
+\newcommand{\mysection}[1]{\section*{#1} \addcontentsline{toc}{section}{#1}}
+\newcommand{\mysubsection}[1]{\subsection*{#1} \addcontentsline{toc}{subsection}{#1}}
+\newcommand{\mysubsubsection}[1]{\subsubsection*{#1} \addcontentsline{toc}{subsubsection}{#1}}
+
+\newcommand{\myFigure}[3]{\begin{figure}[h!]\centering\includegraphics[scale=#1]{figures/#2}\caption{#3}\end{figure}}
+
+\newcommand{\mycitation}[1]{[\citet{#1}]}
+
+\begin{document}
+
+    % % % % % % % % % % % % % % % % %
+    %
+    %	FRONT PAGE
+    %
+    \input{./uib_frontpage.tex}
+
+    % % % % % % % % % % % % % % % % %
+    %
+    %	TABLE OF CONTENTS
+    %
+    \pdfbookmark{\contentsname}{toc}
+    \tableofcontents
+    \newpage
+
+    % % % % % % % % % % % % % % % % %
+    %
+    %	BEGIN
+    %
+	{
+	LOREM IPSUM DOLOR SIT AMET	
+	}    
+    
+    
+    % % % % % % % % % % % % % % % % %
+    %
+    %	ADD REFERANCES
+    %
+    \bibliography{citation-db}
+    \addcontentsline{toc}{section}{References}
+
+\end{document}
