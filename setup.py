@@ -1,5 +1,7 @@
 #!/usr/bin/env python3
 
+import os
+
 # Read Innput
 cCode = input("Enter course code (e.g. INF234): ")
 cName = input("Enter cource name (e.g. Advanced alg.): ")
@@ -18,3 +20,5 @@ innFile.close()
 outFile = open(fileName, "w+")
 outFile.write(fix)
 outFile.close()
+
+os.remove("setup.py")
