@@ -9,6 +9,7 @@ dName = input("Enter Document title (e.g. Obligatory ass. 1): ")
 
 # Static var
 fileName = "uib_frontpage.tex"
+docName = "default.tex"
 
 # Change text
 innFile = open(fileName, "r+")
@@ -21,4 +22,5 @@ outFile = open(fileName, "w+")
 outFile.write(fix)
 outFile.close()
 
+os.rename(docName, cCode + "_report.tex")
 os.remove("setup.py")
